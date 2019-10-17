@@ -1,8 +1,10 @@
 
 body{
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
     width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .header{
@@ -15,7 +17,6 @@ body{
     height: 450px;
 }
 .logo{
-    /* margin: 0; */
     width: 100%;
     height: 450px;
     z-index: 1;
@@ -23,13 +24,16 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-    /* overflow: auto; */
 }
-.logo h2{
+#headline{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#headline h2{
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
-    /* text-align: center; */
     color: white;
     letter-spacing: 2px;
     position: absolute;
@@ -38,7 +42,7 @@ body{
     text-decoration:none ;
 }
 
-.logo h4{
+#headline h4{
     position: absolute;
     top: 325px;
     left: 50%;
@@ -50,33 +54,36 @@ body{
 .logo img{
     float: right;
     position: relative;
-    right: 40px;
-    top: 10px;
+    right: 10px;
+    bottom: 5px;
+    width: 180px;
+    height: 180px;
 }
 
-.logo div{
+#headerCall{
     position: relative;
-    left: 1000px;
-    /* float: right; */
+    left: 87%;
     top: 200px;
     font-size: 40px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.logo div p span{
+#headerCall span{
     color: #C40008;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-hr{
+marquee{
     width: 100%;
-    background-color:  rgb(255, 0, 0);
-    height: 7px;
+    background-color:  rgba(1, 0, 53,0.5);
+    height: 40px;
     margin-top: 0;
     position: relative;
-    top: -5px;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px 0px;
 }
 
 .box_div{
@@ -87,7 +94,7 @@ hr{
     justify-content: space-around;
     padding: 18px 0px;
     position: relative;
-    top: -13px;
+    top: -6px;
 }
 .box{
     background-color:  rgb(1, 0, 53);
@@ -126,22 +133,17 @@ hr{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* background-color: rgba(168, 168, 168, 0.623); */
 }
 
 .courseModule{
-    /* border: 1px solid black; */
     width: 40%;
     height: px;
     margin-top: 20px;
     background-color: rgba(3, 1, 78, 0.2);
     box-shadow: inset 0 0 20px ;
-    /* text-align: center; */
 }
 .courseModule h3{
-    /* border: 1px solid red; */
     width: 100px;
-    /* margin-left: 35%; */
     background-color: rgb(1, 0, 53);
     color: white;
     font-weight: 100;
@@ -186,12 +188,10 @@ hr{
 #module1{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
 }
 
 .contact{
     width: 100%;
-    /* background-color: rgb(1, 0, 53); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -244,7 +244,6 @@ hr{
 .contactForm button{
     margin-bottom: 30px;
     padding: 15px 190px;
-    /* padding-right: 240px; */
     border-radius: 7px;
     background-color: rgb(1, 0, 53);
     color: white;
@@ -253,11 +252,24 @@ hr{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+#icon{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100px;
+}
+
+#icon img{
+    border-radius: 50px;
+    background-color: #C40008;
+    width: 40px;
+    height: 40px;
+}
 
 .footer{
     background-color: rgb(1, 0, 53);
     color: white;
     width: 100%;
+    margin-top: 10px;
     position: relative;
     bottom: 0px;
     height: 40px;
@@ -265,202 +277,133 @@ hr{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+@media (max-width: 1125px){
+    #headline h2{
+        font-size: 50px;
 
-
-/* .info{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-} */
-
-/* @keyframes modalAnimation{
-    form{
-        opacity: 0;
-        bottom: -200px;
     }
-    to{
-        opacity: 1;
-        bottom: 0px;
-    }    
-} */
-/* .courseModule button{
-    padding: 5px 15px;
- } */
-    
- /* ul{
-    list-style-type: disc;
-    list-style-position: outside;
-    line-height: 30px;
-} */
-/* .li{
-    list-style-type: disc;
-    list-style-position: outside;
-
-} */
-/* .modalHeader{
-    background-color: white;
-    /* margin-right: 10px; */
-    /* width: 108%;
-    height: 35px;
-    margin-top: -10px;
-    margin-left: -20px; */
-    /* margin: -10px -5px; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row; 
-    width: 100%;
-         margin: 0;
-    /* position: absolute;
-}*/
-
-/* .modalHeader span{
-    color: black;
-    float: right;
-    font-size: 25px;
-    font-weight: bolder;
-    border: 1px solid black;
-    padding: 2px 9px;
-    border-radius:20px 20px;
-    /* background-color: coral; */
-    /* margin-top: -20px; */
-    /* margin-right: 10px;
-    cursor: pointer;
-    position: relative;
-    bottom: 300px;
-    top: 137px;
-    right: 360px;
+    #headline h4{
+        font-size: 20px;
+    }
+    #headerCall{
+        margin-left: 60px;
+    }
 }
 
-.modalHeader span:hover{
-    background-color: black;
-    color: #C40008;
+@media (max-width: 1012px){
+    
+    #headline h2{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 280%;
+        color: white;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 20px;
+        left: 5%;
+        text-decoration:none ;
+    }
+    
+    #headline h4{
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    #headerCall{
+        position: relative;
+        left: 0;
+    }
 }
-.modalHeader h2{
-    color: black;
-    background-color: white;
-    width: 180px;
-    height: inherit;
-    border: none;
-    border-radius: 0px;
-    margin: 0;
-    font-size: 25px;
-    padding-left: 5px;
+
+@media (max-width: 880px){
+    #headline h2{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 250%;
+        color: white;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 20px;
+        left: 3%;
+        text-decoration:none ;
+    }
+    
+    #headline h4{
+        position: absolute;
+        top: 85px;
+        left: 50%;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
 }
 
-.modalBody{
-    line-height: 20px;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+@media (max-width: 790px){
+    #headline h2{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 250%;
+        color: white;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 30%;
+        left: 3%;
+        text-decoration:none ;
+    }
     
-} */
-/* .li{
-    color: white;
-    
+    #headline h4{
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    #headerCall{
+        position: relative;
+        left: 0;
+        margin-top: 40px;
+    }
 }
 
-.ul{
-    width: 225px;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: normal;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-} */
+@media (max-width: 600px){
+    #headline h2{
 
-/* .module1{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-} */
-
-/* .module2{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-
-} */
-
-/* .module3{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 220%;
+        color: white;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 30%;
+        left: 3%;
+        text-decoration:none ;
+    }
     
-} */
-/* 
-.module4{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-    
-} */
+    #headline h4{
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    #headerCall{
+        position: relative;
+        left: 0;
+        margin-top: 80px;
+    }
+    #headerCall p{
+        font-size: 30px;
+    }
+    #headerCall p span{
+        font-size: 40px;
+    }
+}
 
-/* .module5{
-    
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-} */
-/* .modal-content{ */
-    /* color: black; */
-    /* width: 40%;
-    height: 50%; */
-    /* padding: 10px 20px; */
-    /* border: 2px solid white; */
-    /* background-color:  rgb(1, 0, 53); */
-    /* display: flex; */
-    /* flex-shrink: 1; */
-    /*flex-wrap: wrap;
-    flex-direction: row; */
-    /* box-shadow: 0px 0px 15px 20px gray;
-    margin: 10% auto;
-    position: relative; */
-    
-    /* animation: modalAnimation 0.3s ease-in-out; */
-/* } */
-/* .infoModal{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-} */
