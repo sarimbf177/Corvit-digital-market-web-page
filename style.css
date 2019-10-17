@@ -1,7 +1,13 @@
+
 body{
     margin: 0;
-    padding: 0px;
+    /* padding: 0; */
+    width: 100%;
+}
 
+.header{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cover{
@@ -120,216 +126,54 @@ hr{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* background-color: rgba(168, 168, 168, 0.623); */
 }
 
 .courseModule{
     /* border: 1px solid black; */
-    width: 350px;
-    height: 180px;
+    width: 40%;
+    height: px;
     margin-top: 20px;
-    text-align: center;
+    background-color: rgba(3, 1, 78, 0.2);
+    box-shadow: inset 0 0 20px ;
+    /* text-align: center; */
 }
 .courseModule h3{
     /* border: 1px solid red; */
     width: 100px;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     background-color: rgb(1, 0, 53);
     color: white;
     font-weight: 100;
     padding: 5px 7px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.courseModule ul{
+    float: left;
+    list-style-type: square;
+    line-height: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+.courseModule ul div{
+    float: right;
+}
+
 
 .courseModule h2{
     color:  red;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
-
-.courseModule button{
-    padding: 5px 15px;
-    border-radius: 5px;
-    background-color: gray;
-    border: none;
-    /* color: white; */
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.courseModule button:hover{
-    background-color:black;
-    color: white;
-}
-
-
-/* .infoModal{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-} */
-
-.modal-content{
-    color: white;
-    width: 40%;
-    height: 50%;
-    padding: 10px 20px;
-    /* border: 2px solid white; */
-    background-color:  rgb(1, 0, 53);
-    /* display: flex; */
-    /* flex-shrink: 1; */
-    /*flex-wrap: wrap;
-    flex-direction: row; */
-    box-shadow: 0px 0px 15px 20px gray;
-    margin: 10% auto;
-    position: relative;
-
-    animation: modalAnimation 0.3s ease-in-out;
-}
-
-.modalHeader{
-    background-color: white;
-    /* margin-right: 10px; */
-    width: 108%;
-    height: 35px;
-    margin-top: -10px;
-    margin-left: -20px;
-    /* margin: -10px -5px; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* flex-direction: row; */
-    /* width: 100%; */
-    /* margin: 0; */
-    /* position: absolute; */
-}
-
-.modalHeader span{
-    color: black;
-    float: right;
-    font-size: 25px;
-    font-weight: bolder;
-    /* border: 1px solid black; */
-    padding: 2px 9px;
-    /* border-radius:20px 20px; */
-    /* background-color: coral; */
-    /* margin-top: -20px; */
-    /* margin-right: 10px; */
-    cursor: pointer;
-    position: relative;
-    /* bottom: 300px; */
-    /* top: 137px;
-    right: 360px; */
-}
-
-.modalHeader span:hover{
-    /* background-color: black; */
-    color: #C40008;
-}
-.modalHeader h2{
-    color: black;
-    background-color: white;
-    width: 180px;
-    height: inherit;
-    border: none;
-    border-radius: 0px;
-    margin: 0;
-    font-size: 25px;
-    padding-left: 5px;
-}
-
-.modalBody{
-    /* line-height: 20px; */
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-.li{
-    color: white;
-    
-}
-
-.ul{
-    width: 225px;
+.module2 ul{
     line-height: 30px;
-    font-size: 18px;
-    font-weight: normal;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 1;
+    font-size: 20px;
 }
 
-.module1{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
 
-.module2{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
 
-}
 
-.module3{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
 
-}
-
-.module4{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-
-}
-
-.module5{
-
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
 
 .module{
     display: flex;
@@ -337,16 +181,7 @@ hr{
     justify-content: center;
 }
 
-/* ul{
-    list-style-type: disc;
-    list-style-position: outside;
-    line-height: 30px;
-} */
-/* .li{
-    list-style-type: disc;
-    list-style-position: outside;
 
-} */
 
 #module1{
     display: flex;
@@ -439,7 +274,7 @@ hr{
     justify-content: space-evenly;
 } */
 
-@keyframes modalAnimation{
+/* @keyframes modalAnimation{
     form{
         opacity: 0;
         bottom: -200px;
@@ -448,4 +283,184 @@ hr{
         opacity: 1;
         bottom: 0px;
     }    
+} */
+/* .courseModule button{
+    padding: 5px 15px;
+ } */
+    
+ /* ul{
+    list-style-type: disc;
+    list-style-position: outside;
+    line-height: 30px;
+} */
+/* .li{
+    list-style-type: disc;
+    list-style-position: outside;
+
+} */
+/* .modalHeader{
+    background-color: white;
+    /* margin-right: 10px; */
+    /* width: 108%;
+    height: 35px;
+    margin-top: -10px;
+    margin-left: -20px; */
+    /* margin: -10px -5px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; 
+    width: 100%;
+         margin: 0;
+    /* position: absolute;
+}*/
+
+/* .modalHeader span{
+    color: black;
+    float: right;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 1px solid black;
+    padding: 2px 9px;
+    border-radius:20px 20px;
+    /* background-color: coral; */
+    /* margin-top: -20px; */
+    /* margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    bottom: 300px;
+    top: 137px;
+    right: 360px;
 }
+
+.modalHeader span:hover{
+    background-color: black;
+    color: #C40008;
+}
+.modalHeader h2{
+    color: black;
+    background-color: white;
+    width: 180px;
+    height: inherit;
+    border: none;
+    border-radius: 0px;
+    margin: 0;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.modalBody{
+    line-height: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+} */
+/* .li{
+    color: white;
+    
+}
+
+.ul{
+    width: 225px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+} */
+
+/* .module1{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left: 0;
+    top: 0;
+} */
+
+/* .module2{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+} */
+
+/* .module3{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    
+} */
+/* 
+.module4{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    
+} */
+
+/* .module5{
+    
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left: 0;
+    top: 0;
+} */
+/* .modal-content{ */
+    /* color: black; */
+    /* width: 40%;
+    height: 50%; */
+    /* padding: 10px 20px; */
+    /* border: 2px solid white; */
+    /* background-color:  rgb(1, 0, 53); */
+    /* display: flex; */
+    /* flex-shrink: 1; */
+    /*flex-wrap: wrap;
+    flex-direction: row; */
+    /* box-shadow: 0px 0px 15px 20px gray;
+    margin: 10% auto;
+    position: relative; */
+    
+    /* animation: modalAnimation 0.3s ease-in-out; */
+/* } */
+/* .infoModal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left: 0;
+    top: 0;
+} */
